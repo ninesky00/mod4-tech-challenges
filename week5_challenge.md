@@ -55,19 +55,21 @@ puts to_roman(1999)  # should return "MCMXCIX"
 Do not publish your code on a public repl.it or repo or other public means.
 
 ## Rewrite the question in your own words:
-
+write a recursive method: given roman numerals, convert them into numbers
 
 ## What assumptions will you make about this problem if you cannot ask any more clarifying questions? What are your reasons for making those assumptions?
-
+n/a
 
 ## What are your initial thoughts about this problem? (high level design, 2-3 sentences)
-
+needs a hash map.
+needs a recursive function to convert 1 number at a time. (needs to remember the digit)
+needs to recognize 4s and 9s and their placement
 
 ## How would you identify the elements of this problem?
 
 - [ ] Searching of Data
 - [ ] Sorting of Data
-- [ ] Pattern Recognition
+- [X] Pattern Recognition
 - [ ] Build/Navigate a Grid
 - [ ] Math
 - [ ] Language API knowledge
@@ -75,10 +77,13 @@ Do not publish your code on a public repl.it or repo or other public means.
 
 
 ## Which data structure(s) do you think you'll use? What pros/cons do you see with that choice?
-
+hash map
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
+create a hash map of number to roman numberal
+create a recursive method that checks each number and digit
 
 ## Write out any implementation code OR link to repl
 
 ## What is the Big O complexity of your solution?
+O(n)
