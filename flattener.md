@@ -49,17 +49,18 @@ or in JS:
 
 
 ## Rewrite the question in your own words:
-
+given a set of nested arrays, write a function that unnests the arrays without using the built in flatten functions.
 
 ## What assumptions will you make about this problem if you cannot ask any more clarifying questions? What are your reasons for making those assumptions?
-
+I think the problem is pretty straight forward
 
 ## What are your initial thoughts about this problem? (high level design, 2-3 sentences)
-
+I think we are essentially replicating the flatten function without using the flatten function.
+It should be a good test on how well we know the language.
 
 ## How would you identify the elements of this problem?
 
-- [ ] Searching of Data
+- [X] Searching of Data
 - [ ] Sorting of Data
 - [ ] Pattern Recognition
 - [ ] Build/Navigate a Grid
@@ -69,10 +70,14 @@ or in JS:
 
 
 ## Which data structure(s) do you think you'll use? What pros/cons do you see with that choice?
-
+I don't think any specific data structure is required for this problem.
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
+write a flatten function calls itself removing one layer of nesting,
+write a base case when there are no more layer of nesting,
+write an iterative case for removing one layer of nesting.
 
 ## Write out any implementation code OR link to repl
 
 ## What is the Big O complexity of your solution?
+recursive function would O(n) * constant for the number of nested arrays removed
